@@ -10,6 +10,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -20,8 +22,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-medium: 500;
@@ -201,8 +201,14 @@
   .h-\[80vh\] {
     height: 80vh;
   }
+  .h-fit {
+    height: fit-content;
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-\[25vw\] {
+    width: 25vw;
   }
   .w-\[40vw\] {
     width: 40vw;
@@ -273,6 +279,9 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-\[20vw\] {
+    gap: 20vw;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -297,19 +306,30 @@
     border-style: var(--tw-border-style);
     border-width: 4px;
   }
-  .border-x {
-    border-inline-style: var(--tw-border-style);
-    border-inline-width: 1px;
-  }
-  .border-y {
-    border-block-style: var(--tw-border-style);
-    border-block-width: 1px;
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
   }
   .border-\[\#b6926e\] {
     border-color: #b6926e;
   }
   .border-\[\#bb5e31\] {
     border-color: #bb5e31;
+  }
+  .border-\[\#fbf6ef\] {
+    border-color: #fbf6ef;
+  }
+  .border-\[\[\#fbf6ef\]\] {
+    border-color: [#fbf6ef];
+  }
+  .border-t-\[\#\] {
+    border-top-color: #;
+  }
+  .border-t-\[\#fbf6ef\] {
+    border-top-color: #fbf6ef;
+  }
+  .border-t-\[\#fbf\] {
+    border-top-color: #fbf;
   }
   .bg-\[\#543326\] {
     background-color: #543326;
@@ -383,6 +403,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
@@ -413,6 +436,10 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -440,8 +467,17 @@
   .text-\[\#ead8c5\] {
     color: #ead8c5;
   }
+  .text-\[\#f2a66b\] {
+    color: #f2a66b;
+  }
+  .text-\[\#f2a\] {
+    color: #f2a;
+  }
   .text-\[\#f59952\] {
     color: #f59952;
+  }
+  .text-\[\#fbf6ef\] {
+    color: #fbf6ef;
   }
   .underline {
     text-decoration-line: underline;
@@ -463,6 +499,27 @@
     }
     .hover\:text-\[\#F2A66B\]:hover {
       color: #F2A66B;
+    }
+    .hover\:text-\[\#\]:hover {
+      color: #;
+    }
+    .hover\:text-\[\#f2a66\]:hover {
+      color: #f2a66;
+    }
+    .hover\:text-\[\#f2a66b\]:hover {
+      color: #f2a66b;
+    }
+    .hover\:text-\[\#f2a\]:hover {
+      color: #f2a;
+    }
+    .hover\:text-\[\#f\]:hover {
+      color: #f;
+    }
+    .hover\:text-\[\#fa6\]:hover {
+      color: #fa6;
+    }
+    .hover\:text-\[\#fa\]:hover {
+      color: #fa;
     }
     .hover\:shadow-lg:hover {
       --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
