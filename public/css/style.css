@@ -27,7 +27,7 @@
     gap: 0.75rem;
     /* border: #b6926e solid 1px;
     border-radius: 1rem; */
-    
+
     img {
         height: 30vh;
         object-fit: cover;
@@ -66,4 +66,92 @@
         font-weight: 700;
         font-size: large;
     }
+}
+
+#sharing {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #f3eadb;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: #f2a66b 1px solid;
+    height: fit-content;
+}
+
+#title2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: xx-large;
+        font-weight: 600;
+        color: #b6926e;
+    }
+
+    p {
+        color: #4f4338;
+        font-size: medium;
+    }
+}
+
+#input {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+
+    input {
+        width: 90%;
+        background: #f2f2f2;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+        outline: #b6926e 3px ridge;
+    }
+
+    :hover {
+        outline: #f2a66b 5px ridge;
+    }
+
+    #category {
+        width: 90%;
+        background: #f2f2f2;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+        outline: #b6926e 3px ridge;
+    }
+
+    #category:hover {
+        outline: #f2a66b 5px ridge;
+    }
+
+}
+
+#message {
+    background: #f2f2f2;
+    border-radius: 1rem;
+    border: none;
+    outline: #b6926e 3px ridge;
+    padding: 1rem;
+}
+
+#message:hover {
+        outline: #f2a66b 5px ridge;
+    }
+
+#btn {
+    background: #b6926e;
+    width: 100%;
+    padding: 1rem 0;
+    color: #f2f2f2;
+    border-radius: 3rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #f2a66b;
 }
