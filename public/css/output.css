@@ -201,9 +201,6 @@
   .h-\[80vh\] {
     height: 80vh;
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
@@ -218,9 +215,6 @@
   }
   .w-\[60\%\] {
     width: 60%;
-  }
-  .w-\[60\] {
-    width: 60;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -246,6 +240,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -264,6 +261,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -272,9 +272,6 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -300,6 +297,14 @@
     border-style: var(--tw-border-style);
     border-width: 4px;
   }
+  .border-x {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 1px;
+  }
+  .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
+  }
   .border-\[\#b6926e\] {
     border-color: #b6926e;
   }
@@ -314,9 +319,6 @@
   }
   .bg-\[\#FBF6EF\] {
     background-color: #FBF6EF;
-  }
-  .bg-\[\#\] {
-    background-color: #;
   }
   .bg-\[\#f59952\] {
     background-color: #f59952;
@@ -381,9 +383,6 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
-  }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
@@ -401,10 +400,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-6xl {
     font-size: var(--text-6xl);
@@ -433,29 +428,14 @@
   .text-\[\#4A2B1D\] {
     color: #4A2B1D;
   }
-  .text-\[\#775e45\] {
-    color: #775e45;
-  }
-  .text-\[\#977e64\] {
-    color: #977e64;
-  }
-  .text-\[\#726353\] {
-    color: #726353;
-  }
   .text-\[\#FBF6EF\] {
     color: #FBF6EF;
   }
   .text-\[\#\] {
     color: #;
   }
-  .text-\[\#a69079\] {
-    color: #a69079;
-  }
   .text-\[\#b6926e\] {
     color: #b6926e;
-  }
-  .text-\[\#e9c6a4\] {
-    color: #e9c6a4;
   }
   .text-\[\#ead8c5\] {
     color: #ead8c5;
