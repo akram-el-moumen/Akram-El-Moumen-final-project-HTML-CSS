@@ -187,3 +187,17 @@
     }
 
 }
+
+@media (width < 800px) {
+    #input {
+        flex-direction: column;
+
+        input {
+            width: 100%;
+        }
+
+        #category {
+            width: 100%;
+        }
+    }
+}

@@ -224,6 +224,9 @@
   .h-fit {
     height: fit-content;
   }
+  .h-full {
+    height: 100%;
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
@@ -262,9 +265,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-md {
-    max-width: var(--container-md);
   }
   .flex-1 {
     flex: 1;
@@ -755,9 +755,6 @@
     .max-md\:w-\[90vw\] {
       width: 90vw;
     }
-    .max-md\:w-fit {
-      width: fit-content;
-    }
     .max-md\:w-full {
       width: 100%;
     }
@@ -770,14 +767,14 @@
     .max-md\:items-end {
       align-items: flex-end;
     }
-    .max-md\:justify-around {
-      justify-content: space-around;
-    }
     .max-md\:justify-between {
       justify-content: space-between;
     }
     .max-md\:justify-center {
       justify-content: center;
+    }
+    .max-md\:gap-4 {
+      gap: calc(var(--spacing) * 4);
     }
     .max-md\:gap-6 {
       gap: calc(var(--spacing) * 6);
@@ -785,17 +782,8 @@
     .max-md\:gap-8 {
       gap: calc(var(--spacing) * 8);
     }
-    .max-md\:gap-10 {
-      gap: calc(var(--spacing) * 10);
-    }
     .max-md\:gap-\[10vw\] {
       gap: 10vw;
-    }
-    .max-md\:gap-\[15\] {
-      gap: 15;
-    }
-    .max-md\:gap-\[15vw\] {
-      gap: 15vw;
     }
     .max-md\:rounded-2xl {
       border-radius: var(--radius-2xl);
@@ -806,6 +794,9 @@
     }
     .max-md\:bg-\[\#543326\] {
       background-color: #543326;
+    }
+    .max-md\:object-cover {
+      object-fit: cover;
     }
     .max-md\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
@@ -839,11 +830,6 @@
       .max-md\:hover\:text-\[\#f2a66b\]:hover {
         color: #f2a66b;
       }
-    }
-  }
-  @media (width < 64rem) {
-    .max-lg\:px-6 {
-      padding-inline: calc(var(--spacing) * 6);
     }
   }
   @media (width < 40rem) {
@@ -980,14 +966,6 @@
       .max-sm\:hover\:text-\[\#f2a66b\]:hover {
         color: #f2a66b;
       }
-    }
-  }
-  @media (width >= 64rem) {
-    .lg\:px-6 {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-    .min-lg\:px-6 {
-      padding-inline: calc(var(--spacing) * 6);
     }
   }
 }
