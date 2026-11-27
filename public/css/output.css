@@ -13,6 +13,8 @@
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -186,8 +188,14 @@
   }
 }
 @layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
   .fixed {
     position: fixed;
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .flex {
     display: flex;
@@ -195,17 +203,8 @@
   .table {
     display: table;
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
-  }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -225,20 +224,8 @@
   .h-fit {
     height: fit-content;
   }
-  .w-1 {
-    width: var(--spacing);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-12 {
     width: calc(var(--spacing) * 12);
-  }
-  .w-15 {
-    width: calc(var(--spacing) * 15);
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
@@ -333,8 +320,10 @@
   .gap-\[20vw\] {
     gap: 20vw;
   }
-  .rounded {
-    border-radius: 0.25rem;
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -395,23 +384,8 @@
   .bg-\[\#FBF6EF\] {
     background-color: #FBF6EF;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
-  .bg-\[\#b6\] {
-    background-color: #b6;
-  }
-  .bg-\[\#b6926\] {
-    background-color: #b6926;
-  }
   .bg-\[\#b6926e\] {
     background-color: #b6926e;
-  }
-  .bg-\[\#e1bd90\] {
-    background-color: #e1bd90;
-  }
-  .bg-\[\#e9c08f\] {
-    background-color: #e9c08f;
   }
   .bg-\[\#edd2bb\] {
     background-color: #edd2bb;
@@ -419,14 +393,8 @@
   .bg-\[\#f3eadb\] {
     background-color: #f3eadb;
   }
-  .bg-\[\#f9b667\] {
-    background-color: #f9b667;
-  }
   .bg-\[\#f59952\] {
     background-color: #f59952;
-  }
-  .bg-\[\#fbddb9\] {
-    background-color: #fbddb9;
   }
   .bg-\[\#fbf3ea\] {
     background-color: #fbf3ea;
@@ -479,17 +447,14 @@
   .object-\[75\%_25\%\] {
     object-position: 75% 25%;
   }
-  .p-0 {
-    padding: 0px;
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .px-0 {
-    padding-inline: 0px;
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -518,8 +483,8 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -560,6 +525,10 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -595,17 +564,8 @@
   .text-\[\#\] {
     color: #;
   }
-  .text-\[\#b6\] {
-    color: #b6;
-  }
-  .text-\[\#b692\] {
-    color: #b692;
-  }
   .text-\[\#b6926e\] {
     color: #b6926e;
-  }
-  .text-\[\#b\] {
-    color: #b;
   }
   .text-\[\#ead8c5\] {
     color: #ead8c5;
@@ -624,9 +584,6 @@
   }
   .text-\[\#f59952\] {
     color: #f59952;
-  }
-  .text-\[\#f\] {
-    color: #f;
   }
   .text-\[\#fbf6ef\] {
     color: #fbf6ef;
@@ -654,12 +611,32 @@
     outline-width: 1px;
   }
   @media (hover: hover) {
+    .hover\:border:hover {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+    .hover\:border-2:hover {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
+    }
     .hover\:border-b-2:hover {
       border-bottom-style: var(--tw-border-style);
       border-bottom-width: 2px;
     }
     .hover\:border-\[\#FBF6EF\]:hover {
       border-color: #FBF6EF;
+    }
+    .hover\:border-\[\#\]:hover {
+      border-color: #;
+    }
+    .hover\:border-\[\#b6\]:hover {
+      border-color: #b6;
+    }
+    .hover\:border-\[\#b69\]:hover {
+      border-color: #b69;
+    }
+    .hover\:border-\[\#b6926e\]:hover {
+      border-color: #b6926e;
     }
     .hover\:bg-\[\#f59952\]:hover {
       background-color: #f59952;
@@ -706,6 +683,11 @@
       outline-color: #f59952;
     }
   }
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -831,6 +813,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
