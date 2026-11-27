@@ -10,15 +10,15 @@
 </head>
 
 <body class=" flex flex-col gap-10 bg-[#FBF6EF] font-serif">
-    <header class="">
-        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 fixed">
+    <header class="flex flex-col">
+        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 max-md:px-6 fixed">
             <div class="flex items-center gap-2">
                 <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
-                <img src="../images/logoicon.svg" alt="">
+                <img src="./public/images/logoicon.svg" alt="">
             </div>
             <input class="hidden peer" type="checkbox" name="" id="menu">
             <div
-                class="flex max-sm:flex-col items-center gap-12 max-sm:hidden max-sm:gap-6 max-sm:peer-checked:flex max-sm:absolute max-sm:top-[17vh] max-sm:w-[90vw] max-sm:py-5 max-sm:rounded-2xl max-sm:bg-[#543326] max-sm:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-sm:border-b-2">
+                class="flex max-sm:flex-col max-md:flex-col items-center gap-12 max-sm:hidden max-md:hidden max-sm:gap-6 max-md:gap-8 max-sm:peer-checked:flex max-md:peer-checked:flex max-sm:absolute max-md:absolute max-sm:top-[17vh] max-md:top-[20vh] max-sm:w-[90vw] max-md:w-[90vw] max-sm:py-5 max-md:py-8 max-sm:rounded-2xl max-md:rounded-2xl max-sm:bg-[#543326] max-md:bg-[#543326] max-sm:text-[#fbf6ef] max-md:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-md:hover:text-[#f2a66b] max-sm:border-b-2 max-md:border-b-2">
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="../../index.html">Home</a>
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
@@ -28,7 +28,7 @@
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="contact.html">Contact</a>
                 <div
-                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 hidden max-sm:flex">
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-md:px-5 max-sm:py-3 max-md:py-3 hidden max-sm:flex max-md:flex">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
@@ -36,14 +36,14 @@
             </div>
             <div class="flex gap-4 ">
                 <div
-                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 max-sm:hidden">
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg  max-sm:hidden max-md:hidden">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
                 </div>
                 <label for="menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24"
-                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block cursor-pointer">
+                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block max-md:block cursor-pointer">
                         <path d="M0 0h24v24H0z" fill="none" />
                         <path fill="currentColor" d="M3 5h18v2H3zm5 6h13v2H8zm5 6h8v2h-8z" />
                     </svg>
@@ -54,125 +54,141 @@
 
     <main class="flex flex-col gap-15 py-10">
         <section class="flex flex-col pt-15 gap-10">
-            <div class="flex flex-col gap-4 px-10 max-sm:px-4">
+            <div class="flex flex-col gap-4 px-10 max-sm:px-4 max-md:px-6">
                 <h1 class="text-5xl font-medium text-[#b6926e]">Connect with Care-At Zero Cost</h1>
                 <p class="text-lg text-[#543326]">Licensed Moroccan mental health professionals donating pro-bono hours.
                 </p>
             </div>
-            <div class="flex w-full justify-between max-sm:overflow-x-scroll px-10 max-sm:px-0 max-sm:gap-4 max-sm:w-full ">
+            <div
+                class="flex w-full justify-between max-sm:flex-wrap max-md:flex-wrap px-10 max-sm:px-0 max-md:px-0 max-sm:gap-4 max-md:gap-3 max-sm:w-full max-md:w-full">
                 <h5
-                    class="bg-[#4f4338] text-[#f3eadb] px-10 py-4 max-sm:py-2 rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
+                    class="bg-[#4f4338] text-[#f3eadb] px-10 py-4 max-sm:py-2 max-md:flex-1 max-sm:flex-1 max-sm:w-full max-sm:text-center rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
                     All Specialists
                 </h5>
                 <h5
-                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
+                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 max-md:flex-1 max-sm:flex-1 max-sm:w-full max-sm:text-center rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
                     Trauma & Abuse
                 </h5>
                 <h5
-                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
+                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 max-md:flex-1 max-sm:w-full max-sm:text-center rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
                     Anxiety & Burnout
                 </h5>
                 <h5
-                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
+                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 max-md:w-full max-sm:flex-1 max-sm:w-full max-sm:text-center rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
                     Family Dynamics
                 </h5>
                 <h5
-                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
+                    class="bg-[#f3eadb] text-[#4f4338] px-10 py-4 max-sm:py-2 max-md:w-full max-sm:flex-1 max-sm:w-full max-sm:text-center rounded-4xl border-[#b6926e] border cursor-pointer hover:outline-2 hover:outline-[#f59952]">
                     Audio / Online
                     Only</h5>
             </div>
-            <div class="flex flex-col gap-10 px-10 max-sm:px-4">
-                <div class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col">
-                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-sm:rounded-2xl"
+            <div class="flex flex-col gap-10 px-10 max-sm:px-4 max-md:px-6">
+                <div
+                    class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col max-md:gap-0">
+                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-md:h-full max-sm:rounded-2xl"
                         src="../images/doctor-1.png" alt="">
-                    <div class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-sm:gap-4 ">
+                    <div
+                        class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-md:py-0 max-md:px-4 ">
                         <div class="flex flex-col gap-6 justify-center max-sm:gap-10">
-                            <p class="text-2xl text-[#4f4338]"><span class="font-semibold">Dr. Sara Bennani</span> -
+                            <p class="text-2xl text-[#4f4338] max-md:text-xl"><span class="font-semibold">Dr. Sara
+                                    Bennani</span> -
                                 Clinical Psychologist</p>
                             <p>Trauma Recovery . Casablanca</p>
                             <p class="text-xs text-[#f59952] font-semibold">Online . Darija, French, English . 2 Free
                                 Slots This Week</p>
                         </div>
                         <div class="flex flex-col gap-2 items-center justify-end pb-6 ">
-                            <p class="text-[#f59952] text-xl">2 Free Slots</p>
+                            <p class="text-[#f59952] text-xl max-md:text-lg max-md:items-center">2 Free Slots</p>
                             <button
-                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full">Request
+                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full max-md:text-lg max-md:px-8 max-md:py-0">Request
                                 Session</button>
                         </div>
                     </div>
 
                 </div>
-                <div class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col">
-                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-sm:rounded-2xl"
+                <div
+                    class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col max-md:gap-0">
+                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-md:h-full max-sm:rounded-2xl"
                         src="../images/doctor-2.png" alt="">
-                    <div class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-sm:gap-4 ">
+                    <div
+                        class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-md:py-0 max-md:px-4 ">
                         <div class="flex flex-col gap-6 justify-center max-sm:gap-10">
-                            <p class="text-2xl text-[#4f4338]"><span class="font-semibold">Dr. Youssef Alami</span> -
+                            <p class="text-2xl text-[#4f4338] max-md:text-xl"><span class="font-semibold">Dr. Youssef
+                                    Alami</span> -
                                 Consultant Psychiatrist</p>
                             <p>Anxiety & Sleep . Rabat</p>
                             <p class="text-xs text-[#f59952] font-semibold">Online . Darija, French . Online Evenings
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 items-center justify-end pb-6 ">
-                            <p class="text-[#f59952] text-xl">Online Evenings</p>
+                            <p class="text-[#f59952] text-xl max-md:text-lg max-md:items-center">Online Evenings</p>
                             <button
-                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full">Request
+                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full max-md:text-lg max-md:px-8 max-md:py-0">Request
                                 Session</button>
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col">
-                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-sm:rounded-2xl"
+                <div
+                    class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col max-md:gap-0">
+                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-md:h-full max-sm:rounded-2xl"
                         src="../images/doctor-3.png" alt="">
-                    <div class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-sm:gap-4 ">
+                    <div
+                        class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-md:py-0 max-md:px-4 ">
                         <div class="flex flex-col gap-6 justify-center max-sm:gap-10">
-                            <p class="text-2xl text-[#4f4338]"><span class="font-semibold">Dr. Leila Mansouri</span> -
+                            <p class="text-2xl text-[#4f4338] max-md:text-xl"><span class="font-semibold">Dr. Leila
+                                    Mansouri</span> -
                                 Systemic & Family Therapist</p>
                             <p>Tangier / Online</p>
                             <p class="text-xs text-[#f59952] font-semibold">Darija, French, Amazigh . 3 Free Slots This
                                 Week</p>
                         </div>
                         <div class="flex flex-col gap-2 items-center justify-end pb-6 ">
-                            <p class="text-[#f59952] text-xl">3 Free Slots</p>
+                            <p class="text-[#f59952] text-xl max-md:text-lg max-md:items-center">3 Free Slots</p>
                             <button
-                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full">Request
+                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full max-md:text-lg max-md:px-8 max-md:py-0">Request
                                 Session</button>
                         </div>
                     </div>
                 </div>
-                <d class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col">
-                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%]"
+                <d
+                    class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col max-md:gap-0">
+                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30 max-md:h-full%]"
                         src="../images/doctor-4.png" alt="">
-                    <div class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center">
+                    <div
+                        class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-md:py-0 max-md:px-4">
                         <div class="flex flex-col max-sm:rounded-2xl gap-6 justify-center max-sm:gap-10">
-                            <p class="text-2xl text-[#4f4338]"><span class="font-semibold">Dr. Amine Tazi</span> -
-                                max-sm:gap-4  Trauma-Informed Counselor</p>
+                            <p class="text-2xl text-[#4f4338] max-md:text-xl"><span class="font-semibold">Dr. Amine
+                                    Tazi</span> -
+                                max-sm:gap-4 Trauma-Informed Counselor</p>
                             <p>Marrakesh / Online</p>
                             <p class="text-xs text-[#f59952] font-semibold">Darija, English . Accepting Requests</p>
                         </div>
                         <div class="flex flex-col gap-2 items-center justify-end pb-6">
-                            <p class="text-[#f59952] text-xl">Accepting Requests</p> 
+                            <p class="text-[#f59952] text-xl max-md:text-lg max-md:items-center">Accepting Requests</p>
                             <button
-                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4]">Request
+                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-md:text-lg max-md:px-8 max-md:py-0 ">Request
                                 Session</button>
                         </div>
                     </div>
                 </d max-sm:w-fulliv>
-                <div class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col">
-                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-sm:rounded-2xl"
+                <div
+                    class="flex gap-5 bg-[#edd2bb] rounded-2xl hover:shadow-2xl max-sm:items-center max-sm:flex-col max-md:gap-0">
+                    <img class="h-[30vh] w-[30vw] object-cover object-[75%_25%] rounded-l-2xl max-sm:w-full max-sm:h-[30%] max-md:h-full max-sm:rounded-2xl"
                         src="../images/doctor-5.png" alt="">
-                    <div class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-sm:gap-4 ">
+                    <div
+                        class="flex justify-between w-full px-8 py-4 max-sm:flex-col max-sm:text-center max-md:py-0 max-md:px-4 ">
                         <div class="flex flex-col gap-6 justify-center max-sm:gap-10">
-                            <p class="text-2xl text-[#4f4338]"><span class="font-semibold">Dr. Nadia Cherkaoui</span> -
+                            <p class="text-2xl text-[#4f4338] max-md:text-xl"><span class="font-semibold">Dr. Nadia
+                                    Cherkaoui</span> -
                                 Psychotherapist</p>
                             <p>Self-Worth & Transitions . Fes</p>
                             <p class="text-xs text-[#f59952] font-semibold">Online . Darija, French . 1 Free Slot This
                                 Week</p>
                         </div>
                         <div class="flex flex-col gap-2 items-center justify-end pb-6 ">
-                            <p class="text-[#f59952] text-xl">1 Free Slot</p>
+                            <p class="text-[#f59952] text-xl max-md:text-lg max-md:items-center">1 Free Slot</p>
                             <button
-                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full">Request
+                                class="bg-[#f59952] rounded-4xl cursor-pointer px-6 py-3 text-xl text-[#f2f2f2] hover:shadow-xl hover:shadow-[#f4f4f4] max-sm:w-full max-md:text-lg max-md:px-8 max-md:py-0">Request
                                 Session</button>
                         </div>
                     </div>
@@ -181,9 +197,11 @@
         </section>
 
         <section class="flex flex-col items-center gap-6  bg-[#ffd4a0]  ">
-            <div class="text-4xl font-semibold text-[#b6926e] px-10 py-8 max-sm:text-center">Three Quiet Steps-Zero Red Tape</div>
-            <div class="flex justify-between w-full px-10 max-sm:px-4 max-sm:flex-col max-sm:w-fit">
-                <div class="flex flex-col justify-center gap-4 items-center max-sm:border-b-2 max-sm:py-4 max-sm:border-[#b6926e]">
+            <div class="text-4xl font-semibold text-[#b6926e] px-10 py-8 max-sm:text-center">Three Quiet Steps-Zero Red
+                Tape</div>
+            <div class="flex justify-between w-full px-10 max-sm:px-4 max-sm:flex-col max-sm:w-fit max-md:flex-col max-md:w-full max-md:px-6">
+                <div
+                    class="flex flex-col justify-center gap-4 items-center max-md:flex-row max-sm:border-b-2 max-sm:py-4 max-sm:border-[#b6926e] max-md:border-b-2 max-md:py-6 max-md:border-[#b6926e]">
                     <h4 class="text-xl flex items-center gap-3"><span
                             class="text-3xl text-[#f4f4f4] bg-[#b6926e] rounded-full h-12 w-12 flex items-center justify-center ">1.</span>Choose
                         Who Feels Right</h4>
@@ -199,7 +217,8 @@
                     </svg>
 
                 </div>
-                <div class="flex flex-col justify-center gap-4 items-center max-sm:border-b-2 max-sm:py-4 max-sm:border-[#b6926e]">
+                <div
+                    class="flex flex-col justify-center gap-4 items-center max-md:flex-row max-sm:border-b-2 max-sm:py-4 max-sm:border-[#b6926e] max-md:border-b-2 max-md:py-6 max-md:border-[#b6926e]">
                     <h4 class="text-xl flex items-center gap-3"><span
                             class="text-3xl text-[#f4f4f4] bg-[#b6926e] rounded-full h-12 w-12 flex items-center justify-center ">2.</span>Send
                         a Discreet Request</h4>
@@ -211,7 +230,8 @@
                     </svg>
 
                 </div>
-                <div class="flex flex-col justify-center gap-4 items-center max-sm:border-b-2 max-sm:py-4 max-sm:border-[#b6926e]">
+                <div
+                    class="flex flex-col justify-center gap-4 items-center max-md:flex-row max-sm:py-4 max-md:py-6">
                     <h4 class="text-xl flex items-center gap-3"><span
                             class="text-3xl text-[#f4f4f4] bg-[#b6926e] rounded-full h-12 w-12 flex items-center justify-center ">3.</span>Meet
                         Privately (45 Mins)</h4>
@@ -227,7 +247,7 @@
                 </div>
             </div>
             <div class="flex w-full justify-between bg-[#8c5433] px-10 py-4 max-sm:px-4 max-sm:flex-col max-sm:gap-6  ">
-                <h4 class="flex items-center justify-center text-[#f4f4f4] font-semibold gap-4 ">
+                <h4 class="flex items-center justify-center text-[#f4f4f4] font-semibold gap-4 max-md:gap-1 max-md:text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"
                         class="text-[#f2a66b]">
                         <path d="M0 0h16v16H0z" fill="none" />
@@ -236,7 +256,7 @@
                     </svg>
                     Manually Verified Credentials
                 </h4>
-                <h4 class="flex items-center justify-center text-[#f4f4f4] font-semibold gap-4 ">
+                <h4 class="flex items-center justify-center text-[#f4f4f4] font-semibold gap-4 max-md:gap-1 max-md:text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                         class="text-[#f2a66b]">
                         <path d="M0 0h24v24H0z" fill="none" />
@@ -245,7 +265,7 @@
                     </svg>
                     Absolute Medical Secrecy
                 </h4>
-                <h4 class="flex items-center justify-center text-[#f4f4f4] font-semibold gap-4 ">
+                <h4 class="flex items-center justify-center text-[#f4f4f4] font-semibold gap-4 max-md:gap-1 max-md:text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"
                         class="text-[#f2a66b]">
                         <path d="M0 0h16v16H0z" fill="none" />
@@ -257,27 +277,33 @@
             </div>
         </section>
 
-        <section class="flex flex-col gap-8 px-10 max-sm:px-4">
-            <h2 class="text-4xl text-[#b6926e] max-sm:text-center">Common Questions About Free Therapy</h2>
+        <section class="flex flex-col gap-8 px-10 max-sm:px-4 max-md:px-6">
+            <h2 class="text-4xl text-[#b6926e] max-sm:text-center max-md:text-center">Common Questions About Free Therapy</h2>
             <div class="flex flex-col justify-center gap-6 max-sm:gap-3">
                 <details class="cursor-pointer hover:border-2 hover:border-[#b6926e] p-3 w-fit">
                     <summary class="text-lg text-[#4f4338]">Can I use a nickname instead of my real name?</summary>
-                    <p class="font-semibold text-[#f59952]">Yes. Your privacy comes first—you can book and attend sessions using an alias, and we never store
+                    <p class="font-semibold text-[#f59952]">Yes. Your privacy comes first—you can book and attend
+                        sessions using an alias, and we never store
                         personal accounts or tracking data.</p>
                 </details>
                 <details class="cursor-pointer hover:border-2 hover:border-[#b6926e] p-3 w-fit">
-                    <summary class="text-lg text-[#4f4338]">Does emotional or verbal abuse count even without physical harm?</summary>
-                    <p class="font-semibold text-[#f59952]">Absolutely. Emotional, psychological, and verbal abuse are valid forms of trauma, and our
+                    <summary class="text-lg text-[#4f4338]">Does emotional or verbal abuse count even without physical
+                        harm?</summary>
+                    <p class="font-semibold text-[#f59952]">Absolutely. Emotional, psychological, and verbal abuse are
+                        valid forms of trauma, and our
                         specialists are here to support you regardless of whether there was physical harm.</p>
                 </details>
                 <details class="cursor-pointer hover:border-2 hover:border-[#b6926e] p-3 w-fit">
-                    <summary class="text-lg text-[#4f4338]">Can I request an audio-only session for extra privacy?</summary>
-                    <p class="font-semibold text-[#f59952]">Yes. You can choose audio-only or chat-based online sessions if turning on your camera feels
+                    <summary class="text-lg text-[#4f4338]">Can I request an audio-only session for extra privacy?
+                    </summary>
+                    <p class="font-semibold text-[#f59952]">Yes. You can choose audio-only or chat-based online sessions
+                        if turning on your camera feels
                         unsafe or uncomfortable at home.</p>
                 </details>
                 <details class="cursor-pointer hover:border-2 hover:border-[#b6926e] p-3 w-fit">
                     <summary class="text-lg text-[#4f4338]">How many free sessions can I book?</summary>
-                    <p class="font-semibold text-[#f59952]">Each participating specialist offers up to 3 complimentary 45-minute sessions per person so we
+                    <p class="font-semibold text-[#f59952]">Each participating specialist offers up to 3 complimentary
+                        45-minute sessions per person so we
                         can support as many survivors across Morocco as possible.</p>
                 </details>
             </div>
@@ -285,13 +311,15 @@
     </main>
 
     <footer class="flex flex-col gap-8 bg-[#543326] w-full h-fit p-10 max-sm:px-4">
-        <div class="flex gap-[20vw] max-sm:flex-col max-sm:text-center">
-            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full">
-                <div class="flex items-center gap-2 max-sm:justify-center">
+        <div
+            class="flex gap-[20vw] max-sm:flex-col max-md:flex-wrap max-md:justify-between max-md:gap-[10vw] max-sm:text-center">
+            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full max-md:w-full ">
+                <div class="flex items-center gap-2 max-sm:justify-center max-md:justify-center">
                     <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
-                    <img src="../images/logoicon.svg" alt="">
+                    <img src="./public/images/logoicon.svg" alt="">
                 </div>
-                <p class="text-[#FBF6EF]">short mission for conlous about confidential, free recockeing with mental
+                <p class="text-[#FBF6EF] max-md:text-center">short mission for conlous about confidential, free
+                    recockeing with mental
                     heaith
                     recovery in Morocco.</p>
             </div>
@@ -305,7 +333,7 @@
                 <a class="text-[#FBF6EF] w-fit text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="contact.html">Contact</a>
             </div>
-            <div class="flex flex-col gap-4 max-sm:items-center">
+            <div class="flex flex-col gap-4 max-sm:items-center max-md:items-end">
                 <p class="text-[#fbf6ef] text-xl">National Listening Line</p>
                 <h3 class="text-[#fbf6ef] text-4xl">8350</h3>
                 <p class="text-[#fbf6ef] text-xl">care@makanak.ma</p>
@@ -346,7 +374,7 @@
             </div>
         </div>
         <div class="flex justify-center items-center gap-2 text-xs font-semibold border-t border-[#fbf6ef] pt-4">
-            &copy; Made by <span class="text-[#f2a66b]"> Makanak</span>
+            &copy; Made by <span class="text-[#f2a66b]"> EL MOUMEN AKRAM</span>
         </div>
     </footer>
 </body>
