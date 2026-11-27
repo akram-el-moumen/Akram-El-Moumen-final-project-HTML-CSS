@@ -11,14 +11,14 @@
 
 <body class=" flex flex-col gap-10 bg-[#FBF6EF] font-serif">
     <header class="flex flex-col">
-        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 fixed">
+        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 max-md:px-6 fixed">
             <div class="flex items-center gap-2">
                 <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
                 <img src="./public/images/logoicon.svg" alt="">
             </div>
             <input class="hidden peer" type="checkbox" name="" id="menu">
             <div
-                class="flex max-sm:flex-col items-center gap-12 max-sm:hidden max-sm:gap-6 max-sm:peer-checked:flex max-sm:absolute max-sm:top-[17vh] max-sm:w-[90vw] max-sm:py-5 max-sm:rounded-2xl max-sm:bg-[#543326] max-sm:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-sm:border-b-2">
+                class="flex max-sm:flex-col max-md:flex-col items-center gap-12 max-sm:hidden max-md:hidden max-sm:gap-6 max-md:gap-8 max-sm:peer-checked:flex max-md:peer-checked:flex max-sm:absolute max-md:absolute max-sm:top-[17vh] max-md:top-[20vh] max-sm:w-[90vw] max-md:w-[90vw] max-sm:py-5 max-md:py-8 max-sm:rounded-2xl max-md:rounded-2xl max-sm:bg-[#543326] max-md:bg-[#543326] max-sm:text-[#fbf6ef] max-md:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-md:hover:text-[#f2a66b] max-sm:border-b-2 max-md:border-b-2">
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     href="index.html">Home</a>
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
@@ -28,7 +28,7 @@
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="./public/pages/contact.html">Contact</a>
                 <div
-                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 hidden max-sm:flex">
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-md:px-5 max-sm:py-3 max-md:py-3 hidden max-sm:flex max-md:flex">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
@@ -36,14 +36,14 @@
             </div>
             <div class="flex gap-4 ">
                 <div
-                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 max-sm:hidden">
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg  max-sm:hidden max-md:hidden">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
                 </div>
                 <label for="menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24"
-                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block cursor-pointer">
+                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block max-md:block cursor-pointer">
                         <path d="M0 0h24v24H0z" fill="none" />
                         <path fill="currentColor" d="M3 5h18v2H3zm5 6h13v2H8zm5 6h8v2h-8z" />
                     </svg>
@@ -54,15 +54,15 @@
 
     <main class="flex flex-col ">
         <section
-            class="bg-[url(/public/images/hero-section-img.webp)] w-full h-[80vh] bg-cover bg-center bg-no-repeat flex flex-col justify-center pt-12 px-10 gap-10 max-sm:px-4 max-sm:h-fit max-sm:py-10">
-            <h2 class="text-6xl font-bold text-[#f59952] w-[45vw] max-sm:w-full pt-15 max-sm:text-5xl">You Are Not
+            class="bg-[url(/public/images/hero-section-img.webp)] w-full h-[80vh] bg-cover bg-center bg-no-repeat flex flex-col justify-center pt-12 px-10 gap-10 max-sm:px-4 max-md:px-6 max-sm:h-fit max-md:h-fit max-sm:py-10 max-md:py-12">
+            <h2 class="text-6xl font-bold text-[#f59952] w-[45vw] max-sm:w-full max-md:w-[60vw] pt-15 max-sm:text-5xl max-md:text-5xl">You Are Not
                 Alone. Healing Starts Here.</h2>
             <div class="flex flex-col gap-3">
-                <p class="w-[40vw] text-[#4A2B1D] text-lg font-medium max-sm:w-full max-sm:h-fit">Emotional pain and
+                <p class="w-[40vw] text-[#4A2B1D] text-lg font-medium max-sm:w-full max-md:w-[60vw] max-sm:h-fit max-md:h-fit">Emotional pain and
                     silent pressure weigh heavily
                     over time. Here, you have a safe
                     place in Morocco to be heard without judgment and begin moving forward.</p>
-                <p class="w-[40vw] text-[#4A2B1D] text-lg font-medium max-sm:w-full max-sm:h-fit">Healing doesn't have
+                <p class="w-[40vw] text-[#4A2B1D] text-lg font-medium max-sm:w-full max-md:w-[60vw] max-sm:h-fit max-md:h-fit">Healing doesn't have
                     to happen in silence.
                     Connect with compassionate support and
                     real stories built around safety, dignity, and recovery.</p>
@@ -74,15 +74,15 @@
         </section>
 
         <section
-            class="flex justify-center items-center py-10 text-[#FBF6EF] text-2xl font-medium bg-linear-to-r from-[#e3bf92] to-[#664430] px-10 max-sm:text-center max-sm:px-4">
+            class="flex justify-center items-center py-10 text-[#FBF6EF] text-2xl font-medium bg-linear-to-r from-[#e3bf92] to-[#664430] px-10 max-sm:text-center max-md:text-center max-sm:px-4 max-md:px-6">
             "Surviving in silence took extraordinary strength. You don't have to keep carrying it alone."
         </section>
 
-        <section class="flex flex-col gap-8 items-center px-10 py-10 max-sm:px-4">
-            <div class="font-medium text-3xl text-[#b6926e] max-sm:text-center">
+        <section class="flex flex-col gap-8 items-center px-10 py-10 max-sm:px-4 max-md:px-6">
+            <div class="font-medium text-3xl text-[#b6926e] max-sm:text-center max-md:text-center">
                 Take Sixty Seconds to Breathe
             </div>
-            <div class="flex w-full gap-10 justify-between max-sm:flex-col">
+            <div class="flex w-full gap-10 justify-between max-sm:flex-col max-md:flex-col">
                 <div
                     class="flex flex-col items-center gap-5 w-full px-20 py-10 bg-[#fbf3ea] border-2 border-[#b6926e] rounded-xl">
                     <div
@@ -113,9 +113,9 @@
             </div>
         </section>
 
-        <section class="flex gap-10 items-center p-10 max-sm:px-4 max-sm:flex-col">
-            <img class="w-[40vw] rounded-2xl max-sm:w-full" src="./public/images/invisible.png" alt="">
-            <div class="flex  flex-col gap-5 w-[50vw] max-sm:w-full max-sm:text-center">
+        <section class="flex gap-10 items-center p-10 max-sm:px-4 max-md:px-6 max-sm:flex-col max-md:flex-col">
+            <img class="w-[40vw] rounded-2xl max-sm:w-full max-md:w-full" src="./public/images/invisible.png" alt="">
+            <div class="flex  flex-col gap-5 w-[50vw] max-sm:w-full max-md:w-full max-sm:text-center max-md:text-center">
                 <h3 class="font-medium text-3xl text-[#b6926e]">Naming the Invisible</h3>
                 <div class="flex justify-between gap-5 ">
                     <div
@@ -172,29 +172,29 @@
             </div>
         </section>
 
-        <section class="p-10 max-sm:px-4">
-            <div class="flex rounded-2xl bg-[#543326] max-sm:flex-col w-fit">
-                <div class="flex flex-col justify-between flex-1 p-10 max-sm:gap-4">
-                    <h2 class="text-[#b6926e] text-4xl font-medium w-[60%] max-sm:w-full">Healing Is Not a Luxury. It Is
+        <section class="p-10 max-sm:px-4 max-md:px-6">
+            <div class="flex rounded-2xl bg-[#543326] max-sm:flex-col max-md:flex-col w-fit">
+                <div class="flex flex-col justify-between flex-1 p-10 max-sm:gap-4 max-md:gap-6">
+                    <h2 class="text-[#b6926e] text-4xl font-medium w-[60%] max-sm:w-full max-md:w-full">Healing Is Not a Luxury. It Is
                         a Human
                         Right.</h2>
-                    <p class="w-[90%] font-medium text-xl text-[#ead8c5] max-sm:w-full">Trauma-informed care in Morocco,
+                    <p class="w-[90%] font-medium text-xl text-[#ead8c5] max-sm:w-full max-md:w-full">Trauma-informed care in Morocco,
                         enmistary a
                         motimal cormforting rocanatioos of free sind confidentiiems is have mental health conbhues.</p>
-                    <a class="bg-[#f59952] w-fit px-6 py-4 rounded-4xl  hover:shadow-[#FBF6EF] hover:shadow-lg text-[#FBF6EF] text-xl max-sm:w-full max-sm:px-4"
+                    <a class="bg-[#f59952] w-fit px-6 py-4 rounded-4xl  hover:shadow-[#FBF6EF] hover:shadow-lg text-[#FBF6EF] text-xl max-sm:w-full max-md:w-full max-sm:px-4 max-md:px-6"
                         href="">Meet Our Volunteer Specialists</a>
                 </div>
                 <div class="flex-1">
-                    <img class="w-[50vw] rounded-2xl max-sm:w-full" src="./public/images/healing.png" alt="">
+                    <img class="w-[50vw] rounded-2xl max-sm:w-full max-md:w-full" src="./public/images/healing.png" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="flex flex-col items-center justify-center gap-10 p-10 max-sm:px-4 max-sm:text-center">
+        <section class="flex flex-col items-center justify-center gap-10 p-10 max-sm:px-4 max-md:px-6 max-sm:text-center max-md:text-center">
             <div class="text-4xl text-[#b6926e]">
                 When Someone You Love Opens Up
             </div>
-            <div class="flex justify-around w-full max-sm:flex-col max-sm:gap-8">
+            <div class="flex justify-around w-full max-sm:flex-col  max-sm:gap-8 ">
                 <div class="flex flex-col items-center gap-5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                         class="text-[#b6926e]">
@@ -232,13 +232,13 @@
     </main>
 
     <footer class="flex flex-col gap-8 bg-[#543326] w-full h-fit p-10 max-sm:px-4">
-        <div class="flex gap-[20vw] max-sm:flex-col max-sm:text-center">
-            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full">
-                <div class="flex items-center gap-2 max-sm:justify-center">
+        <div class="flex gap-[20vw] max-sm:flex-col max-md:flex-wrap max-md:justify-between max-md:gap-[10vw] max-sm:text-center">
+            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full max-md:w-full ">
+                <div class="flex items-center gap-2 max-sm:justify-center max-md:justify-center">
                     <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
                     <img src="./public/images/logoicon.svg" alt="">
                 </div>
-                <p class="text-[#FBF6EF]">short mission for conlous about confidential, free recockeing with mental
+                <p class="text-[#FBF6EF] max-md:text-center">short mission for conlous about confidential, free recockeing with mental
                     heaith
                     recovery in Morocco.</p>
             </div>
@@ -252,7 +252,7 @@
                 <a class="text-[#FBF6EF] w-fit text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="./public/pages/contact.html">Contact</a>
             </div>
-            <div class="flex flex-col gap-4 max-sm:items-center">
+            <div class="flex flex-col gap-4 max-sm:items-center max-md:items-end">
                 <p class="text-[#fbf6ef] text-xl">National Listening Line</p>
                 <h3 class="text-[#fbf6ef] text-4xl">8350</h3>
                 <p class="text-[#fbf6ef] text-xl">care@makanak.ma</p>
@@ -293,7 +293,7 @@
             </div>
         </div>
         <div class="flex justify-center items-center gap-2 text-xs font-semibold border-t border-[#fbf6ef] pt-4">
-            &copy; Made by <span class="text-[#f2a66b]"> Makanak</span>
+            &copy; Made by <span class="text-[#f2a66b]"> EL MOUMEN AKRAM</span>
         </div>
     </footer>
 </body>
