@@ -10,15 +10,15 @@
 </head>
 
 <body class=" flex flex-col bg-[#FBF6EF] font-serif">
-    <header class="">
-        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 fixed">
+    <header class="flex flex-col">
+        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 max-md:px-6 fixed">
             <div class="flex items-center gap-2">
                 <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
-                <img src="../images/logoicon.svg" alt="">
+                <img src="./public/images/logoicon.svg" alt="">
             </div>
             <input class="hidden peer" type="checkbox" name="" id="menu">
             <div
-                class="flex max-sm:flex-col items-center gap-12 max-sm:hidden max-sm:gap-6 max-sm:peer-checked:flex max-sm:absolute max-sm:top-[17vh] max-sm:w-[90vw] max-sm:py-5 max-sm:rounded-2xl max-sm:bg-[#543326] max-sm:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-sm:border-b-2">
+                class="flex max-sm:flex-col max-md:flex-col items-center gap-12 max-sm:hidden max-md:hidden max-sm:gap-6 max-md:gap-8 max-sm:peer-checked:flex max-md:peer-checked:flex max-sm:absolute max-md:absolute max-sm:top-[17vh] max-md:top-[20vh] max-sm:w-[90vw] max-md:w-[90vw] max-sm:py-5 max-md:py-8 max-sm:rounded-2xl max-md:rounded-2xl max-sm:bg-[#543326] max-md:bg-[#543326] max-sm:text-[#fbf6ef] max-md:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-md:hover:text-[#f2a66b] max-sm:border-b-2 max-md:border-b-2">
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="../../index.html">Home</a>
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
@@ -28,7 +28,7 @@
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     href="contact.html">Contact</a>
                 <div
-                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 hidden max-sm:flex">
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-md:px-5 max-sm:py-3 max-md:py-3 hidden max-sm:flex max-md:flex">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
@@ -36,14 +36,14 @@
             </div>
             <div class="flex gap-4 ">
                 <div
-                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 max-sm:hidden">
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg  max-sm:hidden max-md:hidden">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
                 </div>
                 <label for="menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24"
-                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block cursor-pointer">
+                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block max-md:block cursor-pointer">
                         <path d="M0 0h24v24H0z" fill="none" />
                         <path fill="currentColor" d="M3 5h18v2H3zm5 6h13v2H8zm5 6h8v2h-8z" />
                     </svg>
@@ -53,11 +53,11 @@
     </header>
 
     <main class="flex flex-col gap-15 pt-27 max-sm:pt-23">
-        <section class="flex flex-col gap-8 items-center bg-linear-to-r from-[#e2bf92] to-[#664430] p-10 max-sm:px-4 max-sm:py-10">
-            <div class="text-4xl font-semibold text-[#f3eadb] max-sm:text-center">Need Help Right Now? You Have Options.</div>
-            <div class="flex justify-center gap-15 items-center w-full max-sm:flex-col">
+        <section class="flex flex-col gap-8 items-center bg-linear-to-r from-[#e2bf92] to-[#664430] p-10 max-sm:px-4 max-md:px-6 max-sm:py-10 max-md:py-12">
+            <div class="text-4xl font-semibold text-[#f3eadb] max-sm:text-center max-md:text-center">Need Help Right Now? You Have Options.</div>
+            <div class="flex justify-center gap-15 items-center w-full max-sm:flex-col max-md:flex-col max-md:gap-8">
                 <div
-                    class="flex justify-center items-center gap-4 bg-[#f3eadb] text-[#4f4338] px-6 py-3 cursor-pointer hover:shadow-[#543326] hover:shadow-2xl hover:border-2 hover:border-[#543326] rounded-4xl flex-1 max-sm:w-full">
+                    class="flex justify-center items-center gap-4 bg-[#f3eadb] text-[#4f4338] px-6 py-3 cursor-pointer hover:shadow-[#543326] hover:shadow-2xl hover:border-2 hover:border-[#543326] rounded-4xl flex-1 max-sm:w-full max-md:w-full">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
                         <path d="M0 0h16v16H0z" fill="none" />
                         <path fill="currentColor"
@@ -66,7 +66,7 @@
                     8350 (National Listening Line)
                 </div>
                 <div
-                    class="flex justify-center items-center gap-4 bg-[#f3eadb] text-[#4f4338] px-6 py-3 cursor-pointer hover:shadow-[#543326] hover:shadow-2xl hover:border-2 hover:border-[#543326] rounded-4xl flex-1 max-sm:w-full">
+                    class="flex justify-center items-center gap-4 bg-[#f3eadb] text-[#4f4338] px-6 py-3 cursor-pointer hover:shadow-[#543326] hover:shadow-2xl hover:border-2 hover:border-[#543326] rounded-4xl flex-1 max-sm:w-full max-md:w-full">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
                         <path d="M0 0h16v16H0z" fill="none" />
                         <path fill="currentColor"
@@ -75,7 +75,7 @@
                     19 /177 (Police & Gendarmerie 24/7)
                 </div>
                 <div
-                    class="flex justify-center items-center gap-4 bg-[#f3eadb] text-[#4f4338] px-6 py-3 cursor-pointer hover:shadow-[#543326] hover:shadow-2xl hover:border-2 hover:border-[#543326] rounded-4xl flex-1 max-sm:w-full">
+                    class="flex justify-center items-center gap-4 bg-[#f3eadb] text-[#4f4338] px-6 py-3 cursor-pointer hover:shadow-[#543326] hover:shadow-2xl hover:border-2 hover:border-[#543326] rounded-4xl flex-1 max-sm:w-full max-md:w-full">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
                         <path d="M0 0h16v16H0z" fill="none" />
                         <path fill="currentColor"
@@ -86,9 +86,9 @@
             </div>
         </section>
 
-        <section class="flex justify-center gap-30 w-full px-10 max-sm:flex-col max-sm:gap-10">
+        <section class="flex justify-center gap-30 w-full px-10 max-sm:flex-col max-sm:gap-10 max-md:gap-12 max-md:flex-col max-md:px-6 max-sm:px-4">
             <div class="flex flex-1 flex-col gap-5">
-                <div class="flex flex-col gap-3 w-[80%] max-sm:w-full max-sm:text-center">
+                <div class="flex flex-col gap-3 w-[80%] max-sm:w-full max-sm:text-center max-md:w-full max-md:text-center">
                     <h2 class="text-4xl font-semibold text-[#b6926e]">Contact Us or Submit a Confidential Report</h2>
                     <p class="font-semibold text-[#4f4338]">Short reassuring and help your mental health and
                         psychological abuse, recovery, it in Morocco.</p>
@@ -118,7 +118,7 @@
             </div>
         </section>
 
-        <section class="flex justify-center gap-30 w-full px-10 pt-20 max-sm:px-4 max-sm:pt-10 max-sm:flex-col max-sm:gap-10">
+        <section class="flex justify-center gap-30 w-full px-10 pt-20 max-sm:px-4 max-sm:pt-10 max-sm:flex-col max-sm:gap-10 max-md:px-6 max-md:flex-col max-md:pt-10 max-md:gap-10">
             <div class="flex items-center flex-1 flex-col gap-5">
 
                 <input
@@ -139,7 +139,7 @@
             </div>
             <div class="flex flex-1 flex-col gap-5">
                 <img class="rounded-2xl h-[40vh]" src="../images/application.png" alt="">
-                <div class="flex flex-col gap-3 w-[80%] max-sm:w-full max-sm:text-center">
+                <div class="flex flex-col gap-3 w-[80%] max-sm:w-full max-md:w-full max-sm:text-center max-md:text-center">
                     <h2 class="text-4xl font-semibold text-[#b6926e]">Join as a Pro-Bono Specialist</h2>
                     <p class="font-semibold text-[#4f4338]">Psychiatrists & psychologists can submit their profile to
                         offer free sessions</p>
@@ -147,9 +147,9 @@
             </div>
         </section>
 
-        <section class="flex justify-around gap-10 px-10 max-sm:px-4 max-sm:flex-col">
+        <section class="flex justify-around gap-10 px-10 max-sm:px-4 max-sm:flex-col max-md:px-6 max-md:flex-wrap max-md:gap-5 max-md:justify-center">
             <div
-                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 flex-1 cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
+                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 max-md:w-[47%] max-sm:w-full cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                     class="text-[#f2a66b] hover:animate-spin">
                     <path d="M0 0h24v24H0z" fill="none" />
@@ -164,7 +164,7 @@
                 <p class="text-xl text-[#4f4338]">Dar Al-Amal Listening Hub</p>
             </div>
             <div
-                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 flex-1 cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
+                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 max-md:w-[47%] max-sm:w-full cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                     class="text-[#f2a66b] hover:animate-spin">
                     <path d="M0 0h24v24H0z" fill="none" />
@@ -179,7 +179,7 @@
                 <p class="text-xl text-[#4f4338]">Safe Pathways Legal & Care Desk</p>
             </div>
             <div
-                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 flex-1 cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
+                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 max-md:w-[47%] max-sm:w-full cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                     class="text-[#f2a66b] hover:animate-spin">
                     <path d="M0 0h24v24H0z" fill="none" />
@@ -194,7 +194,7 @@
                 <p class="text-xl text-[#4f4338]">North Support & Recovery Center</p>
             </div>
             <div
-                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 flex-1 cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
+                class="flex flex-col items-center text-center border-[#b6926e] border-2 rounded-2xl p-6 max-md:w-[47%] max-sm:w-full cursor-pointer hover:shadow-2xl hover:shadow-[#b6926e]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                     class="text-[#f2a66b] hover:animate-spin">
                     <path d="M0 0h24v24H0z" fill="none" />
@@ -234,13 +234,15 @@
     </main>
 
     <footer class="flex flex-col gap-8 bg-[#543326] w-full h-fit p-10 max-sm:px-4">
-        <div class="flex gap-[20vw] max-sm:flex-col max-sm:text-center">
-            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full">
-                <div class="flex items-center gap-2 max-sm:justify-center">
+        <div
+            class="flex gap-[20vw] max-sm:flex-col max-md:flex-wrap max-md:justify-between max-md:gap-[10vw] max-sm:text-center">
+            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full max-md:w-full ">
+                <div class="flex items-center gap-2 max-sm:justify-center max-md:justify-center">
                     <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
-                    <img src="../images/logoicon.svg" alt="">
+                    <img src="./public/images/logoicon.svg" alt="">
                 </div>
-                <p class="text-[#FBF6EF]">short mission for conlous about confidential, free recockeing with mental
+                <p class="text-[#FBF6EF] max-md:text-center">short mission for conlous about confidential, free
+                    recockeing with mental
                     heaith
                     recovery in Morocco.</p>
             </div>
@@ -254,7 +256,7 @@
                 <a class="text-[#FBF6EF] w-fit text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     href="contact.html">Contact</a>
             </div>
-            <div class="flex flex-col gap-4 max-sm:items-center">
+            <div class="flex flex-col gap-4 max-sm:items-center max-md:items-end">
                 <p class="text-[#fbf6ef] text-xl">National Listening Line</p>
                 <h3 class="text-[#fbf6ef] text-4xl">8350</h3>
                 <p class="text-[#fbf6ef] text-xl">care@makanak.ma</p>
@@ -295,7 +297,7 @@
             </div>
         </div>
         <div class="flex justify-center items-center gap-2 text-xs font-semibold border-t border-[#fbf6ef] pt-4">
-            &copy; Made by <span class="text-[#f2a66b]"> Makanak</span>
+            &copy; Made by <span class="text-[#f2a66b]"> EL MOUMEN AKRAM</span>
         </div>
     </footer>
 </body>
