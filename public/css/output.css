@@ -201,12 +201,6 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-\[\#\] {
-    height: #;
-  }
-  .h-\[0vh\] {
-    height: 0vh;
-  }
   .h-\[15vh\] {
     height: 15vh;
   }
@@ -294,9 +288,6 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .gap-0 {
-    gap: 0px;
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -323,9 +314,6 @@
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
   .gap-30 {
     gap: calc(var(--spacing) * 30);
@@ -368,19 +356,6 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
-  .border-none {
-    --tw-border-style: none;
-    border-style: none;
-  }
-  .border-\[\#\] {
-    border-color: #;
-  }
-  .border-\[\#b6\] {
-    border-color: #b6;
-  }
-  .border-\[\#b69\] {
-    border-color: #b69;
-  }
   .border-\[\#b6926e\] {
     border-color: #b6926e;
   }
@@ -405,23 +380,8 @@
   .bg-\[\#FBF6EF\] {
     background-color: #FBF6EF;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-\[\#b6926e\] {
     background-color: #b6926e;
-  }
-  .bg-\[\#e2\] {
-    background-color: #e2;
-  }
-  .bg-\[\#e2b\] {
-    background-color: #e2b;
-  }
-  .bg-\[\#e2bf92\] {
-    background-color: #e2bf92;
-  }
-  .bg-\[\#ecbf92\] {
-    background-color: #ecbf92;
   }
   .bg-\[\#edd2bb\] {
     background-color: #edd2bb;
@@ -493,14 +453,8 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -529,6 +483,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -546,6 +503,9 @@
   }
   .pt-17 {
     padding-top: calc(var(--spacing) * 17);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
@@ -609,9 +569,6 @@
   .text-\[\#FBF6EF\] {
     color: #FBF6EF;
   }
-  .text-\[\#\] {
-    color: #;
-  }
   .text-\[\#b6926e\] {
     color: #b6926e;
   }
@@ -658,18 +615,6 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .outline-\[\#\] {
-    outline-color: #;
-  }
-  .outline-\[\#b6926e\] {
-    outline-color: #b6926e;
-  }
-  .outline-\[ri\] {
-    outline-color: ri;
-  }
-  .outline-\[ridge\] {
-    outline-color: ridge;
-  }
   @media (hover: hover) {
     .hover\:border-2:hover {
       border-style: var(--tw-border-style);
@@ -687,9 +632,6 @@
     }
     .hover\:border-\[\#b6926e\]:hover {
       border-color: #b6926e;
-    }
-    .hover\:bg-\[\#\]:hover {
-      background-color: #;
     }
     .hover\:bg-\[\#f2a66b\]:hover {
       background-color: #f2a66b;
@@ -739,10 +681,6 @@
         --tw-shadow-color: color-mix(in oklab, #f4f4f4 var(--tw-shadow-alpha), transparent);
       }
     }
-    .hover\:outline:hover {
-      outline-style: var(--tw-outline-style);
-      outline-width: 1px;
-    }
     .hover\:outline-2:hover {
       outline-style: var(--tw-outline-style);
       outline-width: 2px;
@@ -750,17 +688,6 @@
     .hover\:outline-3:hover {
       outline-style: var(--tw-outline-style);
       outline-width: 3px;
-    }
-    .hover\:outline-4:hover {
-      outline-style: var(--tw-outline-style);
-      outline-width: 4px;
-    }
-    .hover\:outline-5:hover {
-      outline-style: var(--tw-outline-style);
-      outline-width: 5px;
-    }
-    .hover\:outline-\[\#\]:hover {
-      outline-color: #;
     }
     .hover\:outline-\[\#f2a66b\]:hover {
       outline-color: #f2a66b;
