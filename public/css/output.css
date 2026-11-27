@@ -188,14 +188,8 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
   .fixed {
     position: fixed;
-  }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
   }
   .flex {
     display: flex;
@@ -320,10 +314,8 @@
   .gap-\[20vw\] {
     gap: 20vw;
   }
-  :where(.space-y-3 > :not(:last-child)) {
-    --tw-space-y-reverse: 0;
-    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
-    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -384,6 +376,9 @@
   .bg-\[\#FBF6EF\] {
     background-color: #FBF6EF;
   }
+  .bg-\[\#\] {
+    background-color: #;
+  }
   .bg-\[\#b6926e\] {
     background-color: #b6926e;
   }
@@ -424,12 +419,20 @@
   .bg-\[url\(\/public\/images\/hero-section-img\.webp\)\] {
     background-image: url(/public/images/hero-section-img.webp);
   }
+  .from-\[\#e2bf92\] {
+    --tw-gradient-from: #e2bf92;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-\[\#e3bf92\] {
     --tw-gradient-from: #e3bf92;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-\[\#664430\] {
     --tw-gradient-to: #664430;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#\] {
+    --tw-gradient-to: #;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .bg-cover {
@@ -450,11 +453,14 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .px-1 {
+    padding-inline: var(--spacing);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -483,9 +489,6 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
-  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
@@ -494,6 +497,15 @@
   }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
+  }
+  .pt-17 {
+    padding-top: calc(var(--spacing) * 17);
+  }
+  .pt-18 {
+    padding-top: calc(var(--spacing) * 18);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
@@ -524,10 +536,6 @@
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -623,17 +631,14 @@
       border-bottom-style: var(--tw-border-style);
       border-bottom-width: 2px;
     }
+    .hover\:border-\[\#543326\]:hover {
+      border-color: #543326;
+    }
     .hover\:border-\[\#FBF6EF\]:hover {
       border-color: #FBF6EF;
     }
     .hover\:border-\[\#\]:hover {
       border-color: #;
-    }
-    .hover\:border-\[\#b6\]:hover {
-      border-color: #b6;
-    }
-    .hover\:border-\[\#b69\]:hover {
-      border-color: #b69;
     }
     .hover\:border-\[\#b6926e\]:hover {
       border-color: #b6926e;
@@ -647,6 +652,10 @@
     .hover\:text-\[\#f2a66b\]:hover {
       color: #f2a66b;
     }
+    .hover\:shadow:hover {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
     .hover\:shadow-2xl:hover {
       --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -659,12 +668,28 @@
       --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
+    .hover\:shadow-\[\#543326\]:hover {
+      --tw-shadow-color: #543326;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#543326\]:hover {
+        --tw-shadow-color: color-mix(in oklab, #543326 var(--tw-shadow-alpha), transparent);
+      }
+    }
     .hover\:shadow-\[\#FBF6EF\]:hover {
       --tw-shadow-color: #FBF6EF;
     }
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-\[\#FBF6EF\]:hover {
         --tw-shadow-color: color-mix(in oklab, #FBF6EF var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[\#\]:hover {
+      --tw-shadow-color: #;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#\]:hover {
+        --tw-shadow-color: color-mix(in oklab, # var(--tw-shadow-alpha), transparent);
       }
     }
     .hover\:shadow-\[\#f4f4f4\]:hover {
@@ -683,11 +708,6 @@
       outline-color: #f59952;
     }
   }
-}
-@property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -813,7 +833,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
