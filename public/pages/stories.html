@@ -12,12 +12,14 @@
 
 <body class=" flex flex-col gap-10 bg-[#FBF6EF] font-serif">
     <header class="">
-        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 fixed">
+        <nav class="flex justify-between items-center h-[15vh] w-full bg-[#543326] px-10 max-sm:px-4 fixed">
             <div class="flex items-center gap-2">
                 <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
                 <img src="../images/logoicon.svg" alt="">
             </div>
-            <div class="flex items-center gap-12">
+            <input class="hidden peer" type="checkbox" name="" id="menu">
+            <div
+                class="flex max-sm:flex-col items-center gap-12 max-sm:hidden max-sm:gap-6 max-sm:peer-checked:flex max-sm:absolute max-sm:top-[17vh] max-sm:w-[90vw] max-sm:py-5 max-sm:rounded-2xl max-sm:bg-[#543326] max-sm:text-[#fbf6ef] max-sm:hover:text-[#f2a66b] max-sm:border-b-2">
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="../../index.html">Home</a>
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
@@ -26,34 +28,43 @@
                     target="_blank" href="specialists.html">Specialists</a>
                 <a class="text-[#FBF6EF] text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="contact.html">Contact</a>
-            </div>
-            <div class="flex gap-10 ">
-                <div class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg">
+                <div
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 ">
                     <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
                         Free Therapy
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24"
-                class="text-[#fbf6ef] hover:text-[#f59952] hidden">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path fill="currentColor" d="M3 5h18v2H3zm5 6h13v2H8zm5 6h8v2h-8z" />
-                </svg>
+            </div>
+            <div class="flex gap-4 ">
+                <div
+                    class="bg-[#F2A66B] py-4 px-6 rounded-4xl hover:bg-[#f59952] hover:shadow-[#FBF6EF] hover:shadow-lg max-sm:px-3 max-sm:py-3 max-sm:hidden">
+                    <a href="./public/pages/specialists.html" class="text-[#FBF6EF] text-xl font-medium">
+                        Free Therapy
+                    </a>
+                </div>
+                <label for="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24"
+                        class="text-[#fbf6ef] hover:text-[#f59952] hidden max-sm:block cursor-pointer">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor" d="M3 5h18v2H3zm5 6h13v2H8zm5 6h8v2h-8z" />
+                    </svg>
+                </label>
             </div>
         </nav>
     </header>
 
-    <main class="flex flex-col gap-15 px-10 py-10">
+    <main class="flex flex-col gap-15 px-10 py-10 max-sm:px-4">
         <section class="flex flex-col gap-10 pt-15">
             <div class="flex flex-col items-center gap-2">
                 <h1 class="text-4xl font-semibold text-[#b6926e]">Community Stories & Articles</h1>
                 <h4 class="text-[#543326] text-xl">Real reflections written by survivors across Morocco</h4>
             </div>
-            <div class="flex gap-10 w-fit bg-[linear-gradient(to_right_bottom,#543326,#b6926e)] rounded-2xl ">
-                <div class="w-[60%] p-10 flex flex-col gap-8">
-                    <h2 class="text-4xl w-[70%] text-white/70">The Morning I Stopped Shrinking to Fit Someone Else's
+            <div class="flex gap-10 w-fit bg-[linear-gradient(to_right_bottom,#543326,#b6926e)] rounded-2xl  max-sm:flex-col max-sm:gap-4">
+                <div class="w-[60%] p-10 flex flex-col gap-8 max-sm:w-full max-sm:gap-4">
+                    <h2 class="text-4xl w-[70%] text-white/70 max-sm:w-full">The Morning I Stopped Shrinking to Fit Someone Else's
                         Comfort</h2>
                     <p class="text-white/50">By Fatima . 4 min read</p>
-                    <p class="w-[60%] text-lg text-white">Compassionate article preview shrinking in a Moroccan woman
+                    <p class="w-[60%] text-lg text-white max-sm:w-full">Compassionate article preview shrinking in a Moroccan woman
                         seen even behing overiocking
                         Casablanca's ocean horizon at golden dusk.</p>
                     <a class="flex items-center gap-2 w-fit text-[#f2a66b] text-xl font-semibold" href="">Read Full
@@ -67,7 +78,7 @@
                     </a>
                 </div>
                 <div>
-                    <img class="h-[60vh] w-[50vw] rounded-2xl" src="../images/stories.png" alt="">
+                    <img class="h-[60vh] w-[50vw] rounded-2xl  max-sm:w-full max-sm:h-full max-sm:object-cover" src="../images/stories.png" alt="">
                 </div>
             </div>
         </section>
@@ -143,38 +154,38 @@
         </section>
 
         <section id="sharing">
-                <div id="title2">
-                    <h2>Share Your Story Anonymously</h2>
-                    <p>Share your story, anonymously with ttraming aur short, encouraging.</p>
-                </div>
-                <div id="input">
-                    <input type="text" placeholder="Article Title">
-                    <input type="text" placeholder="City (e.g., Rabat, Fes, Tangier)">
-                </div>
-                <div id="input">
-                    <input type="text" placeholder="Your Name or Alias (Optional)">
-                    <select id="category">
-                        <option value="" hidden>Category Tag</option>
-                        <option value="">Boundaries &amp; Self-Worth</option>
-                        <option value="">Family &amp; Home</option>
-                        <option value="">Healing &amp; Grief</option>
-                        <option value="">Anxiety &amp; Burnout</option>
-                        <option value="">Relationships</option>
-                        <option value="">Identity &amp; Memory</option>
-                        <option value="">Safety &amp; Survival</option>
-                        <option value="">Other</option>
-                    </select>
-                </div>
-                <textarea id="message" cols="70" rows="5" placeholder="Write Your Story / Reflection" ></textarea>
-                <button id="btn">Publish Story Anonymously</button>
+            <div id="title2">
+                <h2>Share Your Story Anonymously</h2>
+                <p>Share your story, anonymously with ttraming aur short, encouraging.</p>
+            </div>
+            <div id="input">
+                <input type="text" placeholder="Article Title">
+                <input type="text" placeholder="City (e.g., Rabat, Fes, Tangier)">
+            </div>
+            <div id="input">
+                <input type="text" placeholder="Your Name or Alias (Optional)">
+                <select id="category">
+                    <option value="" hidden>Category Tag</option>
+                    <option value="">Boundaries &amp; Self-Worth</option>
+                    <option value="">Family &amp; Home</option>
+                    <option value="">Healing &amp; Grief</option>
+                    <option value="">Anxiety &amp; Burnout</option>
+                    <option value="">Relationships</option>
+                    <option value="">Identity &amp; Memory</option>
+                    <option value="">Safety &amp; Survival</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+            <textarea id="message" cols="70" rows="5" placeholder="Write Your Story / Reflection"></textarea>
+            <button id="btn">Publish Story Anonymously</button>
 
         </section>
     </main>
 
-    <footer class="flex flex-col gap-8 bg-[#543326] w-full h-fit p-10">
-        <div class="flex gap-[20vw]">
-            <div class="flex flex-col gap-6 w-[25vw]">
-                <div class="flex items-center gap-2">
+    <footer class="flex flex-col gap-8 bg-[#543326] w-full h-fit p-10 max-sm:px-4">
+        <div class="flex gap-[20vw] max-sm:flex-col max-sm:text-center">
+            <div class="flex flex-col gap-6 w-[25vw] max-sm:w-full">
+                <div class="flex items-center gap-2 max-sm:justify-center">
                     <span class="font-medium text-3xl text-[#FBF6EF]">Makanak</span>
                     <img src="../images/logoicon.svg" alt="">
                 </div>
@@ -182,7 +193,7 @@
                     heaith
                     recovery in Morocco.</p>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 max-sm:items-center">
                 <a class="text-[#FBF6EF] w-fit text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="../../index.html">Home</a>
                 <a class="text-[#FBF6EF] w-fit text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
@@ -192,7 +203,7 @@
                 <a class="text-[#FBF6EF] w-fit text-xl font-medium hover:border-[#FBF6EF] hover: hover:border-b-2 hover:text-[#F2A66B]"
                     target="_blank" href="contact.html">Contact</a>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 max-sm:items-center">
                 <p class="text-[#fbf6ef] text-xl">National Listening Line</p>
                 <h3 class="text-[#fbf6ef] text-4xl">8350</h3>
                 <p class="text-[#fbf6ef] text-xl">care@makanak.ma</p>

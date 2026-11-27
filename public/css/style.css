@@ -155,3 +155,35 @@
 #btn:hover {
     background: #f2a66b;
 }
+
+@media (width < 640px) {
+    #row {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #card  {
+        width: 100%;
+        
+        div {
+            padding-inline: 1rem;
+        }
+        
+    }
+
+    #title2 {
+        text-align: center;
+    }
+
+    #input {
+        flex-direction: column;
+        input {
+            width: 100%;
+        }
+
+        #category {
+            width: 100%;
+        }
+    }
+
+}
