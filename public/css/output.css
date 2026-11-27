@@ -33,6 +33,9 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-4xl: 2rem;
+    --animate-spin: spin 1s linear infinite;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -264,6 +267,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .transform {
+    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -321,6 +327,9 @@
   .gap-\[20vw\] {
     gap: 20vw;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -362,6 +371,9 @@
   .border-\[\#bb5e31\] {
     border-color: #bb5e31;
   }
+  .border-\[\#border-2\] {
+    border-color: #border-2;
+  }
   .border-\[\#fbf6ef\] {
     border-color: #fbf6ef;
   }
@@ -379,6 +391,9 @@
   }
   .bg-\[\#FBF6EF\] {
     background-color: #FBF6EF;
+  }
+  .bg-\[\#\] {
+    background-color: #;
   }
   .bg-\[\#b6926e\] {
     background-color: #b6926e;
@@ -453,6 +468,12 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
@@ -509,6 +530,9 @@
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
+  }
+  .text-center {
+    text-align: center;
   }
   .font-serif {
     font-family: var(--font-serif);
@@ -569,6 +593,9 @@
   .text-\[\#FBF6EF\] {
     color: #FBF6EF;
   }
+  .text-\[\#\] {
+    color: #;
+  }
   .text-\[\#b6926e\] {
     color: #b6926e;
   }
@@ -616,6 +643,18 @@
     outline-width: 1px;
   }
   @media (hover: hover) {
+    .hover\:rotate-2:hover {
+      rotate: 2deg;
+    }
+    .hover\:rotate-180:hover {
+      rotate: 180deg;
+    }
+    .hover\:rotate-360:hover {
+      rotate: 360deg;
+    }
+    .hover\:animate-spin:hover {
+      animation: var(--animate-spin);
+    }
     .hover\:border-2:hover {
       border-style: var(--tw-border-style);
       border-width: 2px;
@@ -645,6 +684,10 @@
     .hover\:text-\[\#f2a66b\]:hover {
       color: #f2a66b;
     }
+    .hover\:shadow:hover {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
     .hover\:shadow-2xl:hover {
       --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -673,6 +716,46 @@
         --tw-shadow-color: color-mix(in oklab, #FBF6EF var(--tw-shadow-alpha), transparent);
       }
     }
+    .hover\:shadow-\[\#\]:hover {
+      --tw-shadow-color: #;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#\]:hover {
+        --tw-shadow-color: color-mix(in oklab, # var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[\#b6\]:hover {
+      --tw-shadow-color: #b6;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#b6\]:hover {
+        --tw-shadow-color: color-mix(in oklab, #b6 var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[\#b69\]:hover {
+      --tw-shadow-color: #b69;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#b69\]:hover {
+        --tw-shadow-color: color-mix(in oklab, #b69 var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[\#b6926e\]:hover {
+      --tw-shadow-color: #b6926e;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#b6926e\]:hover {
+        --tw-shadow-color: color-mix(in oklab, #b6926e var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[\#b\]:hover {
+      --tw-shadow-color: #b;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[\#b\]:hover {
+        --tw-shadow-color: color-mix(in oklab, #b var(--tw-shadow-alpha), transparent);
+      }
+    }
     .hover\:shadow-\[\#f4f4f4\]:hover {
       --tw-shadow-color: #f4f4f4;
     }
@@ -695,7 +778,32 @@
     .hover\:outline-\[\#f59952\]:hover {
       outline-color: #f59952;
     }
+    .hover\:transition:hover {
+      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
   }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -818,9 +926,19 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
