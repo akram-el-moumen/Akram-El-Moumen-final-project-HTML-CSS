@@ -192,6 +192,18 @@
   .fixed {
     position: fixed;
   }
+  .m-10 {
+    margin: calc(var(--spacing) * 10);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-\[-10\] {
+    margin-bottom: -10;
+  }
+  .mb-\[-\] {
+    margin-bottom: -;
+  }
   .flex {
     display: flex;
   }
@@ -294,6 +306,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-1 {
+    gap: var(--spacing);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -326,9 +341,6 @@
   }
   .gap-\[20vw\] {
     gap: 20vw;
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -370,9 +382,6 @@
   }
   .border-\[\#bb5e31\] {
     border-color: #bb5e31;
-  }
-  .border-\[\#border-2\] {
-    border-color: #border-2;
   }
   .border-\[\#fbf6ef\] {
     border-color: #fbf6ef;
@@ -468,9 +477,6 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -495,6 +501,9 @@
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
   }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -507,14 +516,29 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
@@ -527,6 +551,18 @@
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-27 {
+    padding-top: calc(var(--spacing) * 27);
+  }
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
+  }
+  .pt-35 {
+    padding-top: calc(var(--spacing) * 35);
+  }
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
@@ -643,15 +679,6 @@
     outline-width: 1px;
   }
   @media (hover: hover) {
-    .hover\:rotate-2:hover {
-      rotate: 2deg;
-    }
-    .hover\:rotate-180:hover {
-      rotate: 180deg;
-    }
-    .hover\:rotate-360:hover {
-      rotate: 360deg;
-    }
     .hover\:animate-spin:hover {
       animation: var(--animate-spin);
     }
@@ -684,10 +711,6 @@
     .hover\:text-\[\#f2a66b\]:hover {
       color: #f2a66b;
     }
-    .hover\:shadow:hover {
-      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
     .hover\:shadow-2xl:hover {
       --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -716,44 +739,12 @@
         --tw-shadow-color: color-mix(in oklab, #FBF6EF var(--tw-shadow-alpha), transparent);
       }
     }
-    .hover\:shadow-\[\#\]:hover {
-      --tw-shadow-color: #;
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-\[\#\]:hover {
-        --tw-shadow-color: color-mix(in oklab, # var(--tw-shadow-alpha), transparent);
-      }
-    }
-    .hover\:shadow-\[\#b6\]:hover {
-      --tw-shadow-color: #b6;
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-\[\#b6\]:hover {
-        --tw-shadow-color: color-mix(in oklab, #b6 var(--tw-shadow-alpha), transparent);
-      }
-    }
-    .hover\:shadow-\[\#b69\]:hover {
-      --tw-shadow-color: #b69;
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-\[\#b69\]:hover {
-        --tw-shadow-color: color-mix(in oklab, #b69 var(--tw-shadow-alpha), transparent);
-      }
-    }
     .hover\:shadow-\[\#b6926e\]:hover {
       --tw-shadow-color: #b6926e;
     }
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-\[\#b6926e\]:hover {
         --tw-shadow-color: color-mix(in oklab, #b6926e var(--tw-shadow-alpha), transparent);
-      }
-    }
-    .hover\:shadow-\[\#b\]:hover {
-      --tw-shadow-color: #b;
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-\[\#b\]:hover {
-        --tw-shadow-color: color-mix(in oklab, #b var(--tw-shadow-alpha), transparent);
       }
     }
     .hover\:shadow-\[\#f4f4f4\]:hover {
@@ -777,11 +768,6 @@
     }
     .hover\:outline-\[\#f59952\]:hover {
       outline-color: #f59952;
-    }
-    .hover\:transition:hover {
-      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-      transition-duration: var(--tw-duration, var(--default-transition-duration));
     }
   }
 }
