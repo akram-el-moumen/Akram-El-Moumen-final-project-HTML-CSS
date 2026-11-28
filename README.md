@@ -1,4 +1,4 @@
-# Makanak 🌿
+# Makanak 
 
 **Makanak** is a responsive, trauma-informed mental health awareness and support web platform built for Morocco. Designed with warm, calming aesthetics, the platform provides a safe digital space for emotional recovery, survivor storytelling, guided breathing exercises, and access to pro-bono mental health specialists.
 
