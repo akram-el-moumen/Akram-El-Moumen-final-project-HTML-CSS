@@ -32,8 +32,9 @@ After completing the whole desktop version, i went back to the mobile version an
 
 ## Resources
 
-- icons from (https://icon-sets.iconify.design/)
+- icons from `(https://icon-sets.iconify.design/)`
 - images are AI genrated
+- font by tailwind `font-serif`
 
 ## code structure
 
@@ -49,3 +50,24 @@ After completing the whole desktop version, i went back to the mobile version an
     Directory of pro-bono mental health specialists offering free sessions.
 **Contact & Helplines (`public/pages/contact.html`)**
     Direct contact channels and emergency support info, including Morocco's **National Listening Line (`8350`)**.
+
+## steps
+
+- first i've created the repository on github
+- then created the project structure on my desktop and push it into the repository
+- i started working on the first page **index.html**, by creating the header and the sections one by one then the footer
+- after, i copied the header and footer and past it in all the other 3 pages and fixing the links
+- in the three other pages **stories.html---specialists.html---contact.html** i did the same steps as i did to the home page 
+- after i completed working on the desktop version, i did the mobile version, and the tablet version
+- when i complete every section i push the modifications into my github repository, in the responsive i push after completing each peage
+- the whole project has been styled with **tailwindcss** except for the second page **stories.html**, two sections in it **#articles and #sharing** has been styled with **css** with their responsive
+
+## problems
+
+i didn't face any trouble in the project; creating-sections, styling'em, pushing or commiting.
+except for that one section in the **stories.html** page, the first section, the div from line 62 to 83, in the mobile verion i wanted to a scroll bar in'em by using tailwind utility **overflow-x-auto**, the scroll has been added but their form had been changed, so i removed it and styled it with **flex-wrap**, same thing at the tablet responsive
+
+## how to run my project 
+
+you got to have tailwindcss 4.3.5 installed in ur desktop and running this in ur vscode terminal: 
+`npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css -- watch`
